@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: hitest
+
+server:
+  port: 90
+
+endpoints:
+  shutdown:
+    enabled: true
+    sensitive: false
+  restart:
+    enabled: true
+    sensitive: false
+  trace:
+    enabled: true
+    sensitive: false
+  dump:
+    enabled: true
+    sensitive: false
+  metrics:
+    enabled: true
+    sensitive: false
+  env:
+    enabled: true
+    sensitive: false
+  health:
+    enabled: true
+    sensitive: false
+  logfile:
+    enabled: true
+    sensitive: false
+  configprops:
+    enabled: true
+    sensitive: false
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+
+swagger:
+  title: test_title
+  version: 1.1.0.RELEASE
+  license: Apache License, Version 2.0
+  licenseUrl: https://www.apache.org/licenses/LICENSE-2.0.html
+  contact.name: tommy
+  contact.email: huangxianhui@hisense.com
+  base-package:  hisense
+  base-path: /**
+  exclude-path: /error, /ops/**
